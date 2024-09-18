@@ -10,10 +10,9 @@ for (let i=0; i<=10; i++) {
 let n = 10
 list.addEventListener("scroll", ()=>{
 	if (list.scrollHeight-list.scrollTop-list.clientHeight<1) {
-		list.innerHTML += `
-			<li>Item ${n+1}</li>
-			<li>Item ${n+2}</li>
-			`
+		list.innerHTML += 
+		   `<li>Item ${n+1}</li>
+			<li>Item ${n+2}</li>`
 		n=n+1
 	}
 })
